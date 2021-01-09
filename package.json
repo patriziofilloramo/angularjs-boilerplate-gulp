@@ -1,0 +1,45 @@
+{
+  "name": "angularjs-boilerplate-gulp",
+  "version": "1.8.2",
+  "description": "AngularJs v1.8.2 starter kit with Gulp v4 bundling",
+  "main": "gulpfile.babel.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Patrizio Filloramo",
+  "repository": {
+    "directory": "https://github.com/patriziofilloramo/angularjs-boilerplate-gulp.git",
+    "type": "git"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "angular": "^1.8.2",
+    "angular-ui-router": "^1.0.29"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.12.10",
+    "@babel/core": "^7.12.10",
+    "@babel/preset-env": "^7.12.11",
+    "@babel/register": "^7.12.10",
+    "autoprefixer": "^9.7.0",
+    "browser-sync": "^2.26.13",
+    "cssnano": "^4.1.10",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-angular-templatecache": "^3.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cache-bust": "^1.4.1",
+    "gulp-cli": "^2.3.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-if": "^3.0.0",
+    "gulp-ng-annotate": "^2.1.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "gulp-wrap": "^0.15.0",
+    "yargs": "^16.2.0"
+  }
+}

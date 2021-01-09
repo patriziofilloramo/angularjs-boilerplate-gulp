@@ -3,7 +3,7 @@ var root = {
   controller: function RootController() {
     // testing babel! Check console log
     var hello = () => 'hello Babel!';
-    hello();
+    console.log(hello());
   },
   controllerAs: '$root'
 };

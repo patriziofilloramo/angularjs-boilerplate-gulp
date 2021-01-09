@@ -4,6 +4,7 @@
   "description": "AngularJs v1.8.2 starter kit with Gulp v4 bundling",
   "main": "gulpfile.babel.js",
   "scripts": {
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Patrizio Filloramo",

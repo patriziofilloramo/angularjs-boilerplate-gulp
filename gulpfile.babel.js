@@ -65,7 +65,7 @@ const paths = {
   ],
 };
 
-function clean() {
+function cleanTask() {
   return del([dist]);
 }
 
@@ -98,7 +98,7 @@ function jsScriptsTask() {
     )
     .pipe(concat(`${bundle}.js`))
     .pipe(ngAnnotate())
-    .pipe(gulpif(argv.deploy, uglify())) // uglify only if --deploy flag is passed
+    // .pipe(gulpif(argv.deploy, uglify()))
     .pipe(sourcemaps.write("./"))
     .pipe(dest(paths.output.js));
 }
@@ -184,7 +184,7 @@ function serveTask() {
 }
 
 exports.default = series(
-  clean,
+  cleanTask,
   parallel(copyTask, styleTask, templateTask),
   parallel(jsScriptsTask, jsModulesTask),
   parallel(cacheBustTask,transpile),
